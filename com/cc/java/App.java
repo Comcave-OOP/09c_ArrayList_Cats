@@ -10,11 +10,11 @@ public class App {
 		// Cat cat = new Cat("Grizabella");
 		// output(cat.getAttributes());
 		
-		//cat1 / cat2 .. more of the same ...DRY
-		for (int i = 0; i < 10; i++) 
-		{
-			new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
-		}
+		// // cat1 / cat2 .. more of the same ...DRY
+		// for (int i = 0; i < 10; i++) 
+		// {
+		// 	new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
+		// }
 		
 		String [] nameArr = {"Grizabella","Alonzo","RumTumTugger","Suzanne"};
 		ArrayList<Cat> objList = new ArrayList<>();
