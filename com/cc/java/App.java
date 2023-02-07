@@ -6,27 +6,23 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		// Vorüberlegung
+		// // Vorüberlegung
 		// Cat cat = new Cat("Grizabella");
 		// output(cat.getAttributes());
 		
 		//cat1 / cat2 .. more of the same ...DRY
-		// for (int i = 0; i < 10; i++) 
-		// {
-		// 	new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
-		// }
+		for (int i = 0; i < 10; i++) 
+		{
+			new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
+		}
 		
-		String [] nameArr = {"Grizabella","Alonzo", "RumTumTugger","Suzanne"};
+		String [] nameArr = {"Grizabella","Alonzo","RumTumTugger","Suzanne"};
 		ArrayList<Cat> objList = new ArrayList<>();
 
-		for (int i = 0; i < nameArr.length; i++) 
-		// for (int i = 0; i < 4; i++) 
+		for (int i = 0; i < nameArr.length; i++)
 		{
 			objList.add(new Cat(nameArr[i]));
-			output("Cats: " + objList);
-
-			// objList.add(new Cat("someone_" + i));
-		
+			// output("Cats: " + objList);
 
 		}
 
